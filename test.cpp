@@ -23,3 +23,13 @@ void addnode() {
     cout << "\nEnter the name of the student : ";
     cin >> newNode->name; // Assign value to the data field of the new node
 
+// Insert the new node in the list
+    // kondisi jika START == NULL atau noMHS node baru <= noMHS START
+    if (START == NULL || newNode->noMHS <= START->noMHS) {
+        // step 2: insert the new node at the beginning
+        // kondisi jika START tidak kosong dan noMHS node baru sama dengan noMHS START
+        if (START != NULL && newNode->noMHS == START->noMHS) {
+            cout << "\033[31mDuplicate roll numbers not allowed\033[0m" << endl;
+            delete newNode; // to free the allocated memory for the new node
+            return;
+        
