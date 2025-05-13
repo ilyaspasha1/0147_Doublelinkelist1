@@ -41,4 +41,9 @@ void addnode() {
         newNode->prev = NULL; // step 5 : make the new node's prev pointer null
         START = newNode; // step 6 : make the new node the first node
     }
-    
+    else {
+        // insert the new node in the middle or at the end
+        Node* current = START; // step 1.a : start from the first node
+        Node* previous = NULL; // step 1.b : previous node is null initially
+
+       
