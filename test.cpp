@@ -14,3 +14,12 @@ struct Node {
 // deklarasi pointer START dan pemberian nilai
 Node* START = NULL;
 
+// deklarasi prosedur addnode
+void addnode() {
+    // pembuatan node dan pemberian value untuk data noMHS dan name
+    Node* newNode = new Node(); // step 1 buat node baru
+    cout << "\nEnter the roll number of the student : ";
+    cin >> newNode->noMHS; // assign value to the data field of the new node
+    cout << "\nEnter the name of the student : ";
+    cin >> newNode->name; // Assign value to the data field of the new node
+
